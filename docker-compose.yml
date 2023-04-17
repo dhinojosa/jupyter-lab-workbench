@@ -1,0 +1,7 @@
+services:
+  scipy-notebook:
+    image: jupyter/scipy-notebook:2023-02-28
+    volumes:
+      - "${PWD}":/home/jovyan/work
+    ports:
+      - 10000:8888
